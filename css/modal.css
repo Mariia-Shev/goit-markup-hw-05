@@ -25,11 +25,11 @@
 }
 
 .modal-overlay.is-open {
-  opacity: 1;
+  /* opacity: 1; */
   pointer-events: auto;
 }
 
-.modal {
+.container-modal {
   font-family: 'Roboto', sans-serif;
   width: 584px;
   height: 408px;
