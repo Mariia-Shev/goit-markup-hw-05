@@ -112,14 +112,13 @@
   font-weight: 400;
   font-size: 12px;
 
-  line-height: 1.16667;
+  /* line-height: 1.16667; */
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   display: block;
-
   pointer-events: auto;
 }
 .subscribe-container input::placeholder {
