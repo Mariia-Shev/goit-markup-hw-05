@@ -523,24 +523,24 @@
         <!-- #endregion footer-socials -->
 
         <div class="subscribe-container">
-          <!-- <p class="text">Subscribe</p> -->
           <!-- <form action="-" class="subscribe-form"> -->
+          <h3 class="text">Subscribe</h3>
+          <!-- <label for="subscribe" class="text">Subscribe</label> -->
           <div class="subscribe-input-container">
-            <label for="subscribe" class="text">Subscribe</label>
             <input
               id="subscribe"
               name="subscribe-email"
               type="email"
               placeholder="E-mail"
             />
+            <button class="subscribe-button" type="submit">
+              <!-- Subscribe -->
+              <p class="text">Subscribe</p>
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
-          <button class="subscribe-button" type="submit">
-            Subscribe
-            <!-- <p class="text">Subscribe</p> -->
-            <svg class="send-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
           <!-- </form> -->
         </div>
       </div>
@@ -548,7 +548,7 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <!-- <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open">
       <div class="container-modal" id="modal">
         <form action="-" class="contact-form" name="contact-info">
           <button class="close-button" type="button">
@@ -610,7 +610,7 @@
           <button class="send-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- #endregion modal -->
   </body>
 </html>

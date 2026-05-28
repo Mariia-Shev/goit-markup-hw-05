@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-right: 83px;
   /* flex-grow: 1; */
 }
 .footer-socials-container .text {
@@ -61,7 +62,7 @@
   height: 40px;
   background-color: #4d5ae5;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link .link:hover,
 .footer-social-link .link:focus {
@@ -75,9 +76,15 @@
 .subscribe-container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   gap: 16px;
+}
+.subscribe-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
 }
 .subscribe-container .text {
   font-weight: 500;
@@ -90,10 +97,20 @@
 .subscribe-container input {
   border: 1px solid #ffffff;
   border-radius: 4px;
+  outline: transparent;
   padding: 8px 16px;
   width: 264px;
   height: 40px;
   background-color: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: block;
 
@@ -107,6 +124,9 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+.subscribe-container input:focus {
+  border-color: #31d0aa;
+}
 .subscribe-button {
   display: block;
   border-radius: 4px;
@@ -115,6 +135,9 @@
   width: 165px;
   height: 40px;
   max-width: 165px;
+  position: relative;
+
+  align-self: flex-end;
 
   background-color: #4d5ae5;
 
@@ -124,6 +147,8 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   /* text-align: center; */
 
   fill: #ffffff;
@@ -136,6 +161,18 @@
   letter-spacing: 0.04em;
   color: #ffffff;
   text-align: start;
+
+  display: inline;
+  position: absolute;
+  right: 64px;
+  bottom: 8px;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #31d0aa;
 }
 .send-icon {
+  position: absolute;
+  right: 24px;
+  bottom: 8px;
 }
