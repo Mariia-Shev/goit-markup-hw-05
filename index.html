@@ -523,42 +523,42 @@
         <!-- #endregion footer-socials -->
 
         <div class="subscribe-container">
-          <!-- <form action="-" class="subscribe-form"> -->
-          <h3 class="text">Subscribe</h3>
-          <!-- <label for="subscribe" class="text">Subscribe</label> -->
-          <div class="subscribe-input-container">
-            <input
-              id="subscribe"
-              name="subscribe-email"
-              type="email"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-button" type="submit">
-              <!-- Subscribe -->
-              <p class="text">Subscribe</p>
-              <svg class="send-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-          <!-- </form> -->
+          <form action="-" class="subscribe-form">
+            <h3 class="text">Subscribe</h3>
+            <!-- <label for="subscribe" class="text">Subscribe</label> -->
+            <div class="subscribe-input-container">
+              <input
+                id="subscribe"
+                name="subscribe-email"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <!-- <p class="text">Subscribe</p> -->
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="modal-overlay is-open">
-      <div class="container-modal" id="modal">
+    <div class="modal-overlay is-open" id="modal">
+      <div class="container-modal">
         <form action="-" class="contact-form" name="contact-info">
           <button class="close-button" type="button">
             <svg width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h2 class="instruction">
+          <p class="instruction">
             Leave your contacts and we will call you back
-          </h2>
+          </p>
           <div class="input-container">
             <label for="username">Name</label>
             <input type="text" id="username" />
